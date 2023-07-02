@@ -1,0 +1,95 @@
+<html>
+    
+    <head>
+        <title> Jogo da cobrinha</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet " href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <script src="app.js"></script>
+    </head>
+   <body>
+         
+        <h1 class="centralizar font"> Jogo da cobrinha</h1>
+         
+        <p class="instrucoes" >Pressione as teclas direcionais para jogar</p>
+        <p class="pontuacao">Pontuação: <span id="pontos">0</span></p>
+       <!--tamanho do quadrado que vai ocorrer o jogo -->
+        <canvas id="stage" width="600" height="600"></canvas>
+      
+       
+        
+        <div class="accordion " id="accordionExample">
+            <div class="card">
+              <div class="card-header " id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link "  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    História do jogo da cobrinha
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                   <p> Assim como já foi mencionado, o “Snake”, como conhecemos depois de muitos anos, tinha como nome “Blockade”, visto que as cobrinhas mais pareciam blocos inseridos na tela. À época, as versões disponibilizadas eram apenas para arcades, então nada de carregar o joguinho no seu bolso!</p>
+
+                    <p>Na época, fazer o compartilhamento de alguns códigos fonte de programas ou de jogos era bem recorrente. Por isso, no Atari, começaram a surgir algumas novas versões do jogo da cobrinha, permitindo que mais pessoas pudessem jogá-lo em sua casa. O jogo acabou ganhando o nome de “Surround” e foi lançado em 1978.</p>
+
+                    <p>O jogo tão popular entre os brasileiros acabou surgindo, nos celulares da Nokia, no ano de 1997 no modelo Nokia 611. Ainda que a versão fosse primária, onde a cobra era apresentada apenas como uma linha pontilhada na tela, ela continuava se expandindo sempre que se “alimentava”.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header " id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link   collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   Recorde
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>O recorde mundial pertence a um usuário ou usuária da internet, que gravou o seu recorde para o Youtube, sendo este:
+                    Maior pontuação: o usuário ou usuária que carregou o título foi “Waz the game”, com uma pontuação máxima de 252 pontos e jogabilidade completa. </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header " id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Curiosidades
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Sim, é possível zerar o jogo da cobrinha. Muito embora esse mistério tenha ficado no ar por muitos anos, um russo, em 2013, postou uma foto com o final do jogo. Na legenda, ele ainda compartilhou com seus companheiros “eu estava nesta velocidade, num Nokia 3310, com aqueles botões duros.” 
+                    </p>
+                    <p>O mistério, enfim, foi encerrado, já que alguém finalmente conseguiu chegar até a fase final de um dos jogos mais clássicos e mais viciantes de toda a história.</p>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="container d-flex justify-content-between">
+              <p class="foo"> Desenvolvido por Cintia Zang</p>
+              <p class="foo"><a href=" mailto:cintiazang@gmail.com" class="itemfoo">Contato</a></p>
+              <p class="foo"><a  href="https://blog.betrybe.com/tecnologia/jogo-da-cobrinha/" target="_blank" rel="noopener noreferrer" class="itemfoo">Referência</a></p>
+            </div>
+           
+          </div>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
